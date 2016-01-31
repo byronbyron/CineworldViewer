@@ -1,1 +1,19 @@
 @import "../bourbon/bourbon";
+@import "../neat/neat";
+
+/* Basic page layout */
+div.container {
+  @include outer-container;
+}
+
+div.header {
+	@include span-columns(12);
+}
+
+div.main {
+ 	@include span-columns(12);
+}
+
+div.footer {
+	@include span-columns(12);
+}

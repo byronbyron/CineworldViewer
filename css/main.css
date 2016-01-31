@@ -1,3 +1,41 @@
+html {
+  box-sizing: border-box; }
 
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* Basic page layout */
+div.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  div.container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+div.header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  div.header:last-child {
+    margin-right: 0; }
+
+div.main {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  div.main:last-child {
+    margin-right: 0; }
+
+div.footer {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  div.footer:last-child {
+    margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */
