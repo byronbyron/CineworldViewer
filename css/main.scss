@@ -13,10 +13,18 @@ div.header {
 	@include span-columns(12);
 }
 
-div.main {
+div.nav-wrapper {
  	@include span-columns(12);
+}
+
+div.nav-item {
+	@include span-columns(2);
 }
 
 div.footer {
 	@include span-columns(12);
+}
+
+input#datepicker {
+	width: auto;
 }

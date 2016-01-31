@@ -278,6 +278,8 @@ html {
     font-style: italic; }
 
 .dropdown {
+  display: inline-block;
+  position: relative;
   line-height: 1.5; }
   .dropdown .dropdown-container {
     display: inline-block;
@@ -392,12 +394,20 @@ div.header {
   div.header:last-child {
     margin-right: 0; }
 
-div.main {
+div.nav-wrapper {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
-  div.main:last-child {
+  div.nav-wrapper:last-child {
+    margin-right: 0; }
+
+div.nav-item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  div.nav-item:last-child {
     margin-right: 0; }
 
 div.footer {
@@ -407,5 +417,8 @@ div.footer {
   width: 100%; }
   div.footer:last-child {
     margin-right: 0; }
+
+input#datepicker {
+  width: auto; }
 
 /*# sourceMappingURL=main.css.map */

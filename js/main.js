@@ -24,4 +24,9 @@ $(document).ready(function() {
       $(".cinema-dropdown-menu").append('<li data-value="' + value.id + '">' + value.name + "</li>");
     });
   });
+
+  // Setup the datepicker
+  $(function() {
+    $( "#datepicker" ).datepicker({ firstDay: 1});
+  });
 });
