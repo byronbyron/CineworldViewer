@@ -1,7 +1,8 @@
 @import "../bourbon/bourbon";
 @import "../neat/neat";
 @import "../base/base";
-@import "typography";
+@import "base/typography";
+@import "components/dropdown";
 
 /* Basic page layout */
 div.container {
