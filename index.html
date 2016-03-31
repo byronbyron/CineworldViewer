@@ -3,27 +3,94 @@
 <head>
 	<meta charset="utf-8">
 	<title>Cineworld Today</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<style>
+		body {
+			font-size: 16px;
+		}
+		/* Sticky footer styles
+		-------------------------------------------------- */
+		html {
+		  position: relative;
+		  min-height: 100%;
+		}
+		body {
+		  /* Margin bottom by footer height */
+		  margin-bottom: 60px;
+		}
+		.footer {
+		  position: absolute;
+		  bottom: 0;
+		  width: 100%;
+		  /* Set the fixed height of the footer here */
+		  height: 60px;
+		  background-color: #f5f5f5;
+		}
+		.container .text-muted {
+			margin: 20px 0;
+		}
+		input#datepicker {
+		    width: 223px;
+		    line-height: 42px;
+		    height: 42px;
+		}
+	</style>
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script src="js/main.js"></script>
 </head>
 
 <body id="container">
 
-	<div class="header">
-	
-		<h1>Cineworld Today</h1>
+	<!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-	</div><!-- .header -->
+	<div class="container">
 
-	<div class="main">
-
-		<div class="dropdown">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Welcome to Cineworld Today!</h1>
+        <p>Choose a cinema below...</p>
+        
+        <div class="dropdown form-group">
 			<div class="dropdown-container cinema-dropdown-description">
 				<p class="dropdown-description cinema-dropdown-description">Cinema</p>
 				<p class="dropdown-button cinema-dropdown-button">Click to Select</p>
@@ -32,15 +99,26 @@
 			</div>
 		</div>
 
-		<input type="text" id="datepicker">
-		
-	</div><!-- .main -->
+		<div class="form-group">
+			<input class="form-control" type="text" id="datepicker">
+		</div>
 
-	<div class="footer">
+		<div class="form-group">
+			<button type="submit" class="btn btn-lg btn-primary">Select »</button>
+		</div>
+      </div>
+    </div>
 
-		<span>Footer goes here</span>
-
-	</div><!-- .footer -->
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">Footer goes here.</p>
+		</div>
+    </footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>	
 
 </body>
 </html>
